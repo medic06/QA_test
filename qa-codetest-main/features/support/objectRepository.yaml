@@ -1,22 +1,23 @@
 # Date
-dateLoc : /html/body/div[2]/div[1]/div/div[3]/div/div[1]/div[2]/div/div/div/div/div[5]/div/p
+dateLoc : '.herotextwrap'
 
 # URL/Links
 appUrl : https://americas.datasite.com/
 tosURL : https://www.datasite.com/us/en/legal/terms-of-use.html
-TOSLink : /html/body/table/tbody/tr[5]/td[2]/a[1]
+TOSLink : ^https://www.datasite.com/terms-of-use #/html/body/table/tbody/tr[5]/td[2]/a[1]
 
 # Log In
 username : test.email@test.com
 passwrd : Pa55W0rd
 
 # Buttons
-logInButton : /html/body/table/tbody/tr[2]/td[2]/form/div[5]/a
+logInButton : '.primary'
 forGotPw : /html/body/table/tbody/tr[2]/td[2]/form/div[4]/div/h6/a
-submit : /html/body/div/jv-root/div[2]/main/div/div[1]/div/jv-forgot-password-form/form/div[2]/button
+submit : '.primary ng-tns-c66-0'
 langDropDown : //*[@id="headermenu"]/div[1]/ul/li[3]
 
-# Languages
+# Languages 
+# ToDo (Uses xpath, other methods failed. Need to find less flacky option)
 Français : /html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div[2]/div[1]/ul/li[3]/div/div/div/nav/ul/li[2]/ul/li/a/span
 Deutsch : /html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div[2]/div[1]/ul/li[3]/div/div/div/nav/ul/li[3]/ul/li/a/span
 中文 : /html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div[2]/div[1]/ul/li[3]/div/div/div/nav/ul/li[4]/ul/li/a/span
@@ -26,6 +27,6 @@ Italiano : /html/body/div[2]/div[1]/div/div[2]/div/div/div/div/div[2]/div[1]/ul/
 
 # Messages
 logInError : "We didn't recognize the username or password you entered. Please try again."
-emailErrorLoc : /html/body/div/jv-root/div[2]/main/div/div[1]/div/jv-forgot-password-form/form/div[1]/div/div[1]/div/small
+emailErrorLoc : 'small.ng-tns-c66-0'
 emailError : "Error: Email address required"
 
